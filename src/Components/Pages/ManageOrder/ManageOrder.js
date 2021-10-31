@@ -2,14 +2,10 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import useAuth from '../../hooks/useAuth';
 import './ManageOrder.css'
 
 const ManageOrder = () => {
-    const {user}= useAuth()
     const [single,setsingle] = useState([]);
-    const [status, setStatus] = useState([])
 
     console.log(single)
     useEffect(()=> {
@@ -27,6 +23,9 @@ const ManageOrder = () => {
                 setsingle(remainingOrder)
             }
         })
+    }
+    const handleClick = (id) => {
+        const load = 'Approved'
     }
     return (
         <div className="orderdata w-7/12 mx-auto py-10">
@@ -47,6 +46,7 @@ const ManageOrder = () => {
                             <h6 className="mb-2">PhoneNumber : <span className="text-yellow-600 font-bold">{singleCommon.number}</span></h6>
                             <h4 className="mb-4 text-xl ">Status : <span className="text-red-500 font-bold">{singleCommon.status}</span></h4>
                             <button onClick={()=> handleDelete(singleCommon._id)} className="bg-yellow-500 px-5 text-white font-bold py-2">Delete</button>
+                            <button onClick={()=>handleClick(singleCommon._id)} className="bg-yellow-500 px-5 ml-2 text-white font-bold py-2">Approved</button>
                             
                         </div>
                     </div>

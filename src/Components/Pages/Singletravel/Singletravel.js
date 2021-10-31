@@ -52,6 +52,7 @@ const Singletravel = () => {
                         <input className="border w-full py-2 text-xl px-2 mb-2" placeholder='Address' {...register("address", { required: true, maxLength: 20 })}  /> <br />
                         <input className="border w-full py-2 text-xl px-2 mb-2" placeholder="phonenumber" type="number" {...register("number")} /> <br />
                         <input className="border w-full py-2 text-xl hidden px-2 mb-2" defaultValue='Pending' {...register("status", { required: true, maxLength: 20 })}  />
+                        <input className="border w-full py-2 text-xl hidden px-2 mb-2" defaultValue='Approved' {...register("lord", { required: true, maxLength: 20 })}  />
                         <input className="border mb-4 py-3 px-8 bg-yellow-600 text-white" type="submit" value="Confirm order" />
 
                    </div>
