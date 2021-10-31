@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import './Myorder.css'
 

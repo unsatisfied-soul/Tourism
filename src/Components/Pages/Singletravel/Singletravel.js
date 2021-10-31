@@ -1,8 +1,7 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import {useParams} from 'react-router'
-import { useEffect } from 'react/cjs/react.development';
 import useAuth from '../../hooks/useAuth';
 
 
