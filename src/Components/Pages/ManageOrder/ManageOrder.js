@@ -25,7 +25,17 @@ const ManageOrder = () => {
         })
     }
     const handleClick = (id) => {
-        const load = 'Approved'
+        const cahngeStatus = 'Approved'
+        const doted = single.find(e => e._id == id)
+        doted.status = cahngeStatus;
+        axios.put(`https://guarded-reaches-98621.herokuapp.com/orders/${id}`)
+        .then(res => {
+            if(res.data.modifiedCount > 0){
+                const remainingOrder = single.filter(orderlist => orderlist._id !== id)
+                setsingle(remainingOrder)
+            }
+        })
+        
     }
     return (
         <div className="orderdata w-7/12 mx-auto py-10">
