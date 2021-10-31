@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+.mainheader{
+    background-color: #3E065F;
+}
+.logo h2 {
+    font-family: 'Irish Grover', cursive;
+    color: #FF8243;
+}
+.define{
+    color: #FFD07F;
+}
+.menu-li{
+    font-size: 18px;
+    color: white;
+    margin: 0 4px;
+    padding: 4px 4px;
+}

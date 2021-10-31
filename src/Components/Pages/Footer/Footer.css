@@ -1,0 +1,22 @@
+.footer{
+    background-color: #3E065F;
+}
+.footer h2 {
+    font-family: 'Irish Grover', cursive;
+    color: #FF8243;
+}
+.define{
+    color: #FFD07F;
+}
+.footer p{
+    max-width: 600px;
+}
+.footer ul{
+    text-align: center;
+}
+.footer-icon ul li{
+    display: inline;
+    margin-left: 16px;
+    color: white;
+    text-align: center;
+}

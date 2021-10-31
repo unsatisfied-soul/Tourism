@@ -1,0 +1,21 @@
+.single-travel{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.travel-offer-heading{
+    color: #FF8243;
+}
+.tour-desc h2{
+    color: #e69100;
+}
+.desc-button{
+    background-color: #FF8243;
+    color: white;
+    font-weight: bold;
+}
+.tour-img img{
+    height: 340px;
+}
+.tour-details{
+    box-shadow: 0 0 5px rgb(153, 153, 153);
+}
