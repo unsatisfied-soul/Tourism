@@ -2,3 +2,19 @@
     width: 400px;
     height: 250px;
 }
+ @media (max-width: 776px){
+    .orderdata {
+        width: 100%;
+        padding: 0 20px;
+    }
+ }
+ @media (max-width: 582px){
+    .desc h2{
+        font-size: 22px;
+    }
+ }
+ @media (max-width: 482px){
+    .order-img{
+        height: 200px;
+    }
+ }

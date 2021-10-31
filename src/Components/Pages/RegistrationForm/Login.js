@@ -36,7 +36,7 @@ const Login = () => {
     }
     console.log(user)
     return (
-        <div className="login py-8 px-3">
+        <div className="login py-8 px-3 w-2/5 mx-auto">
             <h2 className="text-4xl mb-8 font-bold text-center">Login Form</h2>
             <div className="login-details">
                 <form onSubmit={handlesubmit}>

@@ -6,7 +6,7 @@ import './testimonial.css'
 const Textimonial = () => {
     return (
         <div className="flaticon w-4/5 mx-auto py-12">
-            <h2 className="text-5xl font-bold text-center py-12">Experience Once In Your Life Time</h2>
+            <h2 className="text-5xl font-bold text-center py-12 flaticon-header">Experience Once In Your Life Time</h2>
             <div className="all-flaticon flex text-center gap-5 py-16">
                 <div className="single-flaticon">
                     <FontAwesomeIcon className="text-5xl text-gray-400" icon={faUtensils}></FontAwesomeIcon>

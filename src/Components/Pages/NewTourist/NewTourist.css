@@ -1,0 +1,8 @@
+@media (max-width: 516px){
+    .add-tourist h2{
+        font-size: 22px;
+    }
+    .input-field{
+        width: 80%;
+    }
+}

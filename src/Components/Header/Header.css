@@ -15,3 +15,29 @@
     margin: 0 4px;
     padding: 4px 4px;
 }
+@media (max-width: 792px){
+    .header{
+        padding: 0;
+        width: 100%;
+        padding: 20px 5px;
+    }
+    .logo h2{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .menu{
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 582px){
+    .header{
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-li{
+        font-size: 16px;
+    }
+}

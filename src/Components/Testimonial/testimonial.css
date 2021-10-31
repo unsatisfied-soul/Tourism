@@ -1,3 +1,17 @@
 .flaticon h2{
     color: coral;
 }
+@media (max-width: 582px){
+    .flaticon-header{
+        font-size: 35px;
+        padding: 10px;
+    }
+    .all-flaticon{
+        display: block;
+    }
+    .single-flaticon{
+        margin-bottom: 10px;
+        border: 1px solid black;
+        padding: 16px 20px;
+    }
+}

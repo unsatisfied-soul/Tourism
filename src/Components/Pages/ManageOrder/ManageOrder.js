@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
+import './ManageOrder.css'
 
 const ManageOrder = () => {
     const {user}= useAuth()
@@ -27,15 +28,6 @@ const ManageOrder = () => {
             }
         })
     }
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
-       const changeStatus = data.status;
-       const modified = {status: changeStatus}
-    };
-    const handleApprove = (id) => {
-        axios.put(`https://guarded-reaches-98621.herokuapp.com/orders/${id}`)
-        .then(res=> {console.log(res.data)})
-     }
     return (
         <div className="orderdata w-7/12 mx-auto py-10">
             <h2 className="text-4xl text-yellow-500 font-bold text-center py-10">Client Order {single.length}</h2>
@@ -55,10 +47,7 @@ const ManageOrder = () => {
                             <h6 className="mb-2">PhoneNumber : <span className="text-yellow-600 font-bold">{singleCommon.number}</span></h6>
                             <h4 className="mb-4 text-xl ">Status : <span className="text-red-500 font-bold">{singleCommon.status}</span></h4>
                             <button onClick={()=> handleDelete(singleCommon._id)} className="bg-yellow-500 px-5 text-white font-bold py-2">Delete</button>
-                            <form onSubmit={()=> handleApprove(singleCommon._id)}>
-                                <input   defaultValue='Approved'/>
-                                <input type="submit" value="Approved" />
-                            </form>
+                            
                         </div>
                     </div>
                 )

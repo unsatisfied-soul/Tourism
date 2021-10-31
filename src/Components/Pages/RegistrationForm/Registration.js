@@ -50,7 +50,7 @@ const Registration = () => {
         console.log(name)
     }
     return (
-        <div className="register py-6">
+        <div className="register py-6 w-2/5 mx-auto">
         <h2 className="text-4xl mb-8 font-bold text-center">Register Now</h2>
         <div className="register-details">
             <form onSubmit={handleRegistration}>
